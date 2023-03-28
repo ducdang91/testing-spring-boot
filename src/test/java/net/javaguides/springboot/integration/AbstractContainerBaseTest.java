@@ -18,12 +18,7 @@ public abstract class AbstractContainerBaseTest {
         MY_SQL_CONTAINER.start();
 
     }
-    git init
-    git add .
-    git commit -m "Spring Boot Test Container"
-    git branch -M main
-    git remote add origin https://github.com/ducdang91/testing-spring-boot.git
-    git push -u origin main
+
     @DynamicPropertySource
     public static void dynamicPropertySource(DynamicPropertyRegistry registry){
         registry.add("spring.datasource.url", MY_SQL_CONTAINER::getJdbcUrl);
